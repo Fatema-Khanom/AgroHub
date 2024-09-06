@@ -1,10 +1,9 @@
 
-import React, { Component } from 'react';
-import CanvasJSReact from '@canvasjs/react-charts';
-//var CanvasJSReact = require('@canvasjs/react-charts');
+import  { Component } from 'react';
+import CanvasJSReact from '@canvasjs/react-charts'; // ES6 import
 
-var CanvasJS = CanvasJSReact.CanvasJS;
-var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+const CanvasJSChart = CanvasJSReact.CanvasJSChart; // Destructure the chart
+
 
 class Chart4 extends Component {	
 	render() {
@@ -21,17 +20,30 @@ class Chart4 extends Component {
 					snapToDataPoint: true
 				}
 			},
-			axisY: {
-				title: "Closing Price (in EUR)",
-				valueFormatString: "€##0.00",
-				crosshair: {
-					enabled: true,
-					snapToDataPoint: true,
-					labelFormatter: function(e) {
-						return "€" + CanvasJS.formatNumber(e.value, "##0.00");
-					}
-				}
-			},
+			// axisY: {
+			// 	title: "Closing Price (in EUR)",
+			// 	valueFormatString: "€##0.00",
+			// 	crosshair: {
+			// 		enabled: true,
+			// 		snapToDataPoint: true,
+			// 		labelFormatter: function(e) {
+			// 			return "€" + CanvasJS.formatNumber(e.value, "##0.00");
+			// 		}
+			// 	}
+            // },
+            axisY: {
+  title: "Closing Price (in EUR)",
+  valueFormatString: "€##0.00", // This formats the Y-axis values
+  crosshair: {
+    enabled: true,
+    snapToDataPoint: true,
+    labelFormatter: function (e) {
+      // Format the crosshair label with EUR symbol and 2 decimal places
+      return "€" + e.value.toFixed(2);
+    }
+  }
+},
+
 			data: [{
 				type: "area",
 				xValueFormatString: "DD MMM",
