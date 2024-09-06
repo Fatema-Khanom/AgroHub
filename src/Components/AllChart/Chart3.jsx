@@ -1,65 +1,77 @@
-import  { Component } from 'react';
-//import CanvasJSReact from '@canvasjs/react-charts'; // ES6 import
+import React, { PureComponent } from 'react';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-//const CanvasJSChart = CanvasJSReact.CanvasJSChart; // Destructure the chart
-import { CanvasJSChart } from 'canvasjs-react-charts';
+const data = [
+  {
+    name: 'Page A',
+    uv: 4000,
+    pv: 2400,
+    amt: 2400,
+  },
+  {
+    name: 'Page B',
+    uv: 3000,
+    pv: 1398,
+    amt: 2210,
+  },
+  {
+    name: 'Page C',
+    uv: 2000,
+    pv: 9800,
+    amt: 2290,
+  },
+  {
+    name: 'Page D',
+    uv: 2780,
+    pv: 3908,
+    amt: 2000,
+  },
+  {
+    name: 'Page E',
+    uv: 1890,
+    pv: 4800,
+    amt: 2181,
+  },
+  {
+    name: 'Page F',
+    uv: 2390,
+    pv: 3800,
+    amt: 2500,
+  },
+  {
+    name: 'Page G',
+    uv: 3490,
+    pv: 4300,
+    amt: 2100,
+  },
+];
 
-let startTime = 0, endTime = 0;
+export default class Chart3 extends PureComponent {
+  static demoUrl = 'https://codesandbox.io/p/sandbox/stacked-area-chart-forked-5yjhcs';
 
-class Chart3 extends Component {
-	// componentDidMount() {
-	// 	endTime = new Date();
-	// 	document.getElementById("timeToRender").innerHTML = "Time to Render: " + (endTime - startTime) + "ms";
-	// }
-
-	render() {
-		var limit = 50000;
-		var y = 100;    
-		var data = [];
-		var dataSeries = { type: "line" };
-		var dataPoints = [];
-
-		for (var i = 0; i < limit; i += 1) {
-			y += Math.round(Math.random() * 10 - 5);
-			dataPoints.push({
-				x: i,
-				y: y
-			});
-		}
-		dataSeries.dataPoints = dataPoints;
-		data.push(dataSeries);
-
-		const spanStyle = {
-			position:'absolute', 
-			top: '10px',
-			fontSize: '20px', 
-			fontWeight: 'bold', 
-			backgroundColor: '#d85757',
-			padding: '0px 4px',
-			color: '#ffffff'
-		}
-
-		const options = {
-			zoomEnabled: true,
-			animationEnabled: true,
-			title: {
-				text: "Try Zooming - Panning"
-			},
-			data: data  // random data
-		}
-
-		startTime = new Date();
-
-		return (
-		<div>
-			<CanvasJSChart options = {options} 
-				 onRef={ref => this.chart = ref}
-			/>
-			{/*You can get reference to the chart instance as shown above using onRef. This allows you to access all chart properties and methods*/}
-			<span id="timeToRender" style={spanStyle}></span>
-		</div>
-		);
-	} 			
+  render() {
+    return (
+      <ResponsiveContainer width="100%" height="100%">
+        <AreaChart
+          width={600}
+          height={400}
+          data={data}
+        //   margin={{
+        //     top: 10,
+        //     right: 30,
+        //     left: 0,
+        //     bottom: 0,
+        //   }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Area type="monotone" dataKey="uv" stackId="1" stroke="#8884d8" fill="#8884d8" />
+          <Area type="monotone" dataKey="pv" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
+          <Area type="monotone" dataKey="amt" stackId="1" stroke="#ffc658" fill="#ffc658" />
+        </AreaChart>
+      </ResponsiveContainer>
+    );
+  }
 }
-
-export default Chart3;  
