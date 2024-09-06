@@ -10,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@canvasjs/react-charts": "^1.0.2",
     "@heroicons/react": "^2.1.5",
     "@material-tailwind/react": "^2.1.10",
+    "canvasjs-react-charts": "^1.0.5",
     "google-map-react": "^2.2.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",

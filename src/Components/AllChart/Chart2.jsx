@@ -1,7 +1,7 @@
 import  { Component } from 'react';
-import CanvasJSReact from '@canvasjs/react-charts'; // ES6 import
-
-const CanvasJSChart = CanvasJSReact.CanvasJSChart; // Destructure the chart
+//import CanvasJSReact from 'canvasjs-react-charts';
+import { CanvasJSChart } from 'canvasjs-react-charts';
+//const CanvasJSChart = CanvasJSReact.CanvasJSChart; // Destructure the chart
 
 
 
