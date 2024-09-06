@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import CanvasJSReact from '@canvasjs/react-charts';
-//var CanvasJSReact = require('@canvasjs/react-charts');
+import CanvasJSReact from '@canvasjs/react-charts'; // ES6 import
+
+const CanvasJSChart = CanvasJSReact.CanvasJSChart;
+// import React, { Component } from 'react';
+// import CanvasJSReact from '@canvasjs/react-charts';
+// //var CanvasJSReact = require('@canvasjs/react-charts');
  
-var CanvasJS = CanvasJSReact.CanvasJS;
-var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+// var CanvasJS = CanvasJSReact.CanvasJS;
+// var CanvasJSChart = CanvasJSReact.CanvasJSChart;
  
 var startTime = 0, endTime = 0;
+
  
 class Chart3 extends Component {
 	// componentDidMount() {

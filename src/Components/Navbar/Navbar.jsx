@@ -77,7 +77,7 @@ export function StickyNavbar() {
  
   return (
     <div className="">
-      <Navbar className="z-10 max-w-full h-max   rounded-none py- px-4 lg:px-8 lg:  bg-opacity-75  backdrop-blur-lg  backdrop-saturate-180 border-none">
+      <Navbar className="absolute top-0 left-0 z-20 w-full h-max py-4 px-4 lg:px- bg-transparent backdrop-blur-none backdrop-saturate- shadow-none border-none">
         <div className="flex items-center justify-between text-blue-gray-900">
           {/* <Typography
             as="a"
