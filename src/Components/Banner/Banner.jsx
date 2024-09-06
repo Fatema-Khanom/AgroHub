@@ -45,7 +45,8 @@ const VideoBanner = () => {
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Background video */}
-      <video
+      <video poster="poster-image.jpg" preload="metadata"
+        loading="lazy" 
         autoPlay
         loop
         muted
