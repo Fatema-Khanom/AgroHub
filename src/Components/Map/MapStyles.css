@@ -1,0 +1,54 @@
+/* Legend box colors */
+.legend {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 180px;
+    position: absolute;
+    top: 0px;
+    right: 80px;
+    z-index: 1000;
+    /* Ensure the legend stays above the map */
+}
+
+.legend h4 {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.legend div {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.legend-box {
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+/* Legend marker size */
+.legend-circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: gray;
+    margin-right: 10px;
+}

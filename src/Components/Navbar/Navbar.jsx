@@ -31,16 +31,19 @@ export function StickyNavbar() {
   }, []);
  
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+       <a href="#" className="relative group">
+        <span className="text-black group-hover:font-bol transition duration-300 ease-in-out">
           Home
-        </a>
+        </span>
+        <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
+      </a>
       </Typography>
       <Typography
         as="li"
@@ -48,9 +51,12 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          About us
-        </a>
+        <a href="#" className="relative group">
+        <span className="text-black group-hover:font-bol transition duration-300 ease-in-out">
+          About Us
+        </span>
+        <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
+      </a>
       </Typography>
       <Typography
         as="li"
@@ -58,9 +64,12 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="#" className="relative group">
+        <span className="text-black group-hover:font-bol transition duration-300 ease-in-out">
           Documentation
-        </a>
+        </span>
+        <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
+      </a>
       </Typography>
       <Typography
         as="li"
@@ -68,16 +77,24 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        {/* <a href="#" className="flex items-center hover:underline">
           Docs
-        </a>
+          
+        </a> */}
+        <a href="#" className="relative group">
+        <span className="text-black group-hover:font-bol transition duration-300 ease-in-out">
+          Visualization
+        </span>
+        <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
+      </a>
+
       </Typography>
     </ul>
   );
  
   return (
     <div className="">
-      <Navbar className="absolute top-0 left-0 z-20 w-full h-max py-4 px-4 lg:px- bg-transparent backdrop-blur-none backdrop-saturate- shadow-none border-none">
+      <Navbar className="absolute top-0 left-0 z-20   h-max py-2 px lg:px- rounded-none w-full bg-transparent backdrop-blur-none backdrop-saturate-  shadow-none border-none">
         <div className="flex items-center justify-between text-blue-gray-900">
           {/* <Typography
             as="a"
