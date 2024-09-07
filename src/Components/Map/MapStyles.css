@@ -52,3 +52,15 @@
     background: gray;
     margin-right: 10px;
 }
+
+.search-filter-container input {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-filter-container {
+    margin-bottom: 20px;
+}
