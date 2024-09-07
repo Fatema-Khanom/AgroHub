@@ -1,14 +1,4 @@
-// import React from 'react';
 
-// const Navbar = () => {
-//     return (
-//         <div>
-//             nav
-//         </div>
-//     );
-// };
-
-//export default Navbar;
 
 import React from "react";
 import {
@@ -93,8 +83,8 @@ export function StickyNavbar() {
   );
  
   return (
-    <div className="">
-      <Navbar className="absolute top-0 left-0 z-20   h-max py-2 px lg:px- rounded-none w-full bg-transparent backdrop-blur-none backdrop-saturate-  shadow-none border-none">
+    <div className="w-full absolute max-w-screen">
+      <Navbar className=" top-0 left-0 z-20   h-max py-2 px lg:px- rounded-none w-full bg-transparent backdrop-blur-none backdrop-saturate-150 d shadow-none border-none">
         <div className="flex items-center justify-between text-blue-gray-900">
           {/* <Typography
             as="a"
