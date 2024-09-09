@@ -9,9 +9,8 @@ const Home = () => {
     return (
         <div>
             <VideoBanner></VideoBanner>
+             <Map></Map>
             <AllChart></AllChart>
-            
-            <Map></Map>
             <InteractiveMap></InteractiveMap>
         </div>
     );
