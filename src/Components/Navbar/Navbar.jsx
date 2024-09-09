@@ -315,11 +315,11 @@ export function StickyNavbar() {
  
   return (
     <div className="">
-      <Navbar className="absolute top-0 left-0 z-20 h-max py-2 px lg:px- rounded-none w-full bg-transparent backdrop-blur-none backdrop-saturate- shadow-none border-none">
-        <div className="flex items-center justify-between text-blue-gray-900">
-          <img src="https://i.ibb.co/4sjYrYH/1-removebg-preview.png" className="h-20" alt="" />
-          <div className="flex items-center gap-4">
-            <div className="mr-4 hidden lg:block">{navList}</div>
+      <Navbar className="absolute max-w-full top-0 left-0 z-20 h-max py-2 px lg:px- rounded-none w-full bg-transparent backdrop-blur-sm backdrop-saturate- shadow-none border-none">
+        <div className="flex items-center justify-between text-blue-gray-900 w-full">
+         <div className=""> <img src="https://i.ibb.co/4sjYrYH/1-removebg-preview.png" className="h-20" alt="" /></div>
+          <div className="flex items-center text-center gap-4">
+            <div className="mr-4 hidden lg:block ">{navList}</div>
             
             <IconButton
               variant="text"
@@ -362,7 +362,7 @@ export function StickyNavbar() {
         </div>
         <MobileNav open={openNav}>
           {navList}
-         
+        
         </MobileNav>
       </Navbar>
       
