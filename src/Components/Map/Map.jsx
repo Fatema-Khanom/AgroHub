@@ -369,42 +369,8 @@ const Map = () => {
   });
 
   return (
-    <div className='px-8 lg:px-20 py-10' style={{ position: 'relative', height: '100%', width: '100%' }}>
-      {/* Search and Filter Options */}
-      {/* <div className="search-filter-container">
-        <input
-          type="text"
-          placeholder="Search by location..."
-          value={searchTerm}
-          onChange={handleSearch}
-          className="border px-2 py-1 mb-2"
-        />
-        <input
-          type="number"
-          name="rainfall"
-          placeholder="Min Rainfall (mm)"
-          value={filters.rainfall}
-          onChange={handleFilterChange}
-          className="border px-2 py-1 mb-2"
-        />
-        <input
-          type="number"
-          name="temperature"
-          placeholder="Min Temperature (°C)"
-          value={filters.temperature}
-          onChange={handleFilterChange}
-          className="border border-green-800 px-2 py-1 mb-2"
-        />
-        <input
-          type="number"
-          name="yield"
-          placeholder="Min Yield (tons)"
-          value={filters.yield}
-          onChange={handleFilterChange}
-          className="border px-2 py-1 mb-2"
-        />
-        <Button className='bg-green-800' onClick={handleSearchButtonClick}>Search</Button>
-      </div> */}
+    <div className='px-8 lg:px-20 py-10  ' style={{ position: 'relative', height: '100%', width: '100%' }}>
+     
       <div className="search-filter-container">
   <input
     type="text"
@@ -442,8 +408,8 @@ const Map = () => {
 
 
       {/* Map Legend */}
-      <div className="legend mt-4 lg:mt-28">
-        <h4>Legend</h4>
+      <div className="legend mt-48 lg:mt-28">
+        <h4></h4>
         <div><span className="legend-box blue"></span>Low Rainfall (&lt;300 mm)</div>
         <div><span className="legend-box green"></span>Moderate Rainfall (300-399 mm)</div>
         <div><span className="legend-box red"></span>High Rainfall (&gt;400 mm)</div>

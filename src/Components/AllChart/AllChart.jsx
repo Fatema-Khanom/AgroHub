@@ -6,8 +6,11 @@ import Chart4 from './Chart4';
 
 const AllChart = () => {
     return (
-        <div className="px-4 md:px-10 lg:px-20 lg:-ml-4 py-20">
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 gap-y-60'>
+        <div className="px-4 md:px-10 lg:px-24 lg:-ml-4 py-16 mb-20">
+             <header className=" pb-10 py-  ">
+          <h1 className="text-2xl underlin text-cente text-green-900 font-bold">Real time data Visualization</h1>
+        </header>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 gap-y-60 pb-28'>
             <Chart1></Chart1>
             <Chart2></Chart2>
             <Chart3></Chart3>
