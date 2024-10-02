@@ -73,7 +73,7 @@ const VideoBanner = ({ posterSrc }) => {
 
       {/* Content on top of the video */}
       <div className="relative-10 flex items-center justify-center h-full text-white text-center px-">
-        <div className="mt-  backdrop-blur-sm w-full ">
+        <div className="mt-  backdrop-blur-s w-full ">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold  mx-auto ">
            <span className='text-green-900 font-bold'>Secure the Future of Agriculture</span> <br /> with AgroHub's Advanced Technology
         </h1>
