@@ -72,12 +72,12 @@ const VideoBanner = ({ posterSrc }) => {
       </video>
 
       {/* Content on top of the video */}
-      <div className="relative z-10 flex items-center justify-center h-full text-white text-center px-4">
-        <div className="mt-">
+      <div className="relative-10 flex items-center justify-center h-full text-white text-center px-">
+        <div className="mt-  backdrop-blur-sm w-full ">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold  mx-auto ">
-           <span className='text-green-900'>Secure the Future of Agriculture</span> <br /> with AgroHub's Advanced Technology
+           <span className='text-green-900 font-bold'>Secure the Future of Agriculture</span> <br /> with AgroHub's Advanced Technology
         </h1>
-        <p className='w-8/12 mx-auto mt-4 text-sm'>Unlock the power of NASA’s Earth observation to tackle unpredictable weather, pests, and water challenges. Explore real-time insights and cutting-edge technology to transform farming practices, protect crops, and secure food for tomorrow.
+        <p className='w-8/12 mx-auto mt-4 text-sm'>Unlock the power of NASA’s Earth observation to tackle unpredictable weather, pests, and water challenges. Explore real-time insights and <br /> cutting-edge technology to transform farming practices, protect crops, and secure food for tomorrow.
 </p>
         </div>
       </div>
