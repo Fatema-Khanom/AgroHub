@@ -39,6 +39,9 @@ import "./index.css";
 import { ThemeProvider } from "@material-tailwind/react";
 import Main from "./Layout/Main";
 import Home from "./Pages/Home/Home";
+import AboutUs from "./Pages/AboutUs/AboutUs";
+import AlertPage from "./Pages/AlertPage/AlertPage";
+import WeatherWithAR from "./Components/WeatherWithAR/WeatherWithAR";
 
 const router = createBrowserRouter([
   // {
@@ -53,6 +56,21 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+          
+      },
+      {
+        path: "/aboutus",
+        element: <AboutUs></AboutUs>,
+          
+      },
+      {
+        path: "/alert",
+        element: <AlertPage></AlertPage>,
+          
+      },
+      {
+        path: "/weatherwithAR",
+        element: <WeatherWithAR></WeatherWithAR>,
           
       },
     ]

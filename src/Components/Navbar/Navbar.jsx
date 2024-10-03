@@ -240,6 +240,7 @@ import {
   IconButton,
   Card,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
  
 export function StickyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -259,12 +260,12 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-       <a href="#" className="relative group">
+       <Link to={"/"} className="relative group">
         <span className="text-black group-hover:font-bol transition duration-300 ease-in-out">
           Home
         </span>
         <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
-      </a>
+      </Link>
       </Typography>
       <Typography
         as="li"
@@ -272,12 +273,12 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="relative group">
+        <Link to={"/aboutus"}  className="relative group">
         <span className="text-black group-hover:font-bol transition duration-300 ease-in-out">
           About Us
         </span>
         <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
-      </a>
+      </Link>
       </Typography>
       <Typography
         as="li"
@@ -292,6 +293,8 @@ export function StickyNavbar() {
         <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
       </a>
       </Typography>
+
+
       <Typography
         as="li"
         variant="small"
@@ -309,6 +312,20 @@ export function StickyNavbar() {
         <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
       </a>
 
+      </Typography>
+
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link to={"/alert"}  className="relative group">
+        <span className="text-black group-hover:font-bol transition duration-300 ease-in-out">
+          Alert
+        </span>
+        <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
+      </Link>
       </Typography>
     </ul>
   );
