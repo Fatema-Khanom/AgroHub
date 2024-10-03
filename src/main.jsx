@@ -42,6 +42,7 @@ import Home from "./Pages/Home/Home";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import AlertPage from "./Pages/AlertPage/AlertPage";
 import WeatherWithAR from "./Components/WeatherWithAR/WeatherWithAR";
+import Documentation from "./Pages/Documentation/Documentation";
 
 const router = createBrowserRouter([
   // {
@@ -63,14 +64,19 @@ const router = createBrowserRouter([
         element: <AboutUs></AboutUs>,
           
       },
+      // {
+      //   path: "/alert",
+      //   element: <AlertPage></AlertPage>,
+          
+      // },
       {
-        path: "/alert",
-        element: <AlertPage></AlertPage>,
+        path: "/weatherwithar",
+        element: <WeatherWithAR></WeatherWithAR>,
           
       },
       {
-        path: "/weatherwithAR",
-        element: <WeatherWithAR></WeatherWithAR>,
+        path: "/documentation",
+        element: <Documentation></Documentation>,
           
       },
     ]

@@ -1,5 +1,7 @@
 import React from 'react';
 import Card from './Card';
+import { StickyNavbar } from '../../Components/Navbar/Navbar';
+import { FooterWithSocialLinks } from '../../Components/Footer/Footer';
 
 const teamMembers = [
     { 
@@ -66,7 +68,9 @@ const teamMembers = [
 
 const AboutUs = () => {
     return (
-        <div className="bg-green-100 py-32">
+        <div className="">
+            <StickyNavbar></StickyNavbar>
+            <div className="bg-green-100 py-32">
             <h2 className="text-center text-4xl font-bold mb-6 text-green-800">About Us</h2>
             <div className="px-10 lg:px-40 mx-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
                 {teamMembers.map((member, index) => (
@@ -79,6 +83,8 @@ const AboutUs = () => {
                     />
                 ))}
             </div>
+            </div>
+            <FooterWithSocialLinks></FooterWithSocialLinks>
         </div>
     );
 };
