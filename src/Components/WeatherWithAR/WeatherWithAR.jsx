@@ -258,7 +258,7 @@ const WeatherWithAR = () => {
         humidity: `${weather.main.humidity}%`,
         windSpeed: `${weather.wind.speed} m/s`,
         cloudy: weather.clouds.all > 50 ? "Yes Cloudy" : "Clear",
-        rain: weather.weather.some((w) => w.main === "Rain") ? "Yes" : "No",
+        rain: weather.weather.some((w) => w.main === "Rain") ? "Yes" : "Yes",
         heatWave: weather.main.temp > 35 ? "Alert" : "No Threat",
         flood:
           weather.weather.some(
