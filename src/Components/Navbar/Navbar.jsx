@@ -305,7 +305,7 @@ export function StickyNavbar() {
           Docs
           
         </a> */}
-        <a href="#" className="relative group">
+        <a href="#chart" className="relative group">
         <span className="text-black group-hover:font-bol transition duration-300 ease-in-out">
           Visualization
         </span>

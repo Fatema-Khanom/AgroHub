@@ -61,7 +61,7 @@ const AgriChat = () => {
           <h1 className="text-2xl font-semibold text-cente text-green-700 mb-6">Agriculture Chatbot</h1>
       <div className="flex flex-col items-center w-full mx-auto p-5  shadow-green-700 bg-gray- rounded-lg shadow-lg">
         
-        <div className="w-full h-80 overflow-y-auto p-3 bg-green- border border-gray-300 rounded-lg">
+        <div className="w-full h-96 overflow-y-auto p-3 bg-green- border border-gray-300 rounded-lg">
           {chatHistory.length === 0 ? (
             // Render the image and text if chat history is empty
             <div className="text-center bg-green">
@@ -72,7 +72,7 @@ const AgriChat = () => {
                           />
                           <h2 className="text-2xl font-bold">Hello! I'm AgroBot</h2>
               <p className="mt-3 text-gray font-seibold text-green-600 px-4  lg:px-20">
-                This is an Agriculture Chatbot designed to assist farmers with valuable information and insights to enhance their farming practices.
+                AgroBot is designed to assist farmers with valuable information and insights to enhance their farming practices.
                 Feel free to ask questions related to agriculture!
               </p>
             </div>

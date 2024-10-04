@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutOurApp = () => {
   return (
-    <div className="px-6 md:px-24 py-12 bg-gray-100">
+    <div className="px-6 md:px-24 py-12 bg-gray-">
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Left Side: Text Section */}
         <div className="md:w-1/2 mb-8 md:mb-0">
@@ -38,9 +38,9 @@ const AboutOurApp = () => {
         {/* Right Side: Image Section */}
         <div className="md:w-1/2">
           <img
-            src="your-image-url-here.jpg"
+            src="https://i.ibb.co.com/F56xDkd/app-interface.png"
             alt="App Screenshot"
-            className="w-full h-auto rounded shadow-lg"
+            className="w-full h-auto rounded shadow-"
           />
         </div>
       </div>
