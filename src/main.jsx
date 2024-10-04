@@ -43,6 +43,7 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import AlertPage from "./Pages/AlertPage/AlertPage";
 import WeatherWithAR from "./Components/WeatherWithAR/WeatherWithAR";
 import Documentation from "./Pages/Documentation/Documentation";
+import Quiz from "./Components/Game/Game";
 
 const router = createBrowserRouter([
   // {
@@ -77,6 +78,11 @@ const router = createBrowserRouter([
       {
         path: "/documentation",
         element: <Documentation></Documentation>,
+          
+      },
+      {
+        path: "/quiz",
+        element: <Quiz></Quiz>
           
       },
     ]

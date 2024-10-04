@@ -9,6 +9,8 @@ import WeatherAndDiseaseDetection from '../../Components/WeatherAndDiseaseDetect
 import { StickyNavbar } from '../../Components/Navbar/Navbar';
 import { FooterWithSocialLinks } from '../../Components/Footer/Footer';
 import AboutOurApp from '../../Components/AboutOurApp/AboutOurApp';
+import MyMapComponent from '../../Components/SatelliteMap/SatelliteMap';
+import Quiz from '../../Components/Game/Game';
 // import SearchMap from '../../Components/SearchMap/SearchMap';
 
 
@@ -20,12 +22,14 @@ const Home = () => {
         <div>
             <StickyNavbar></StickyNavbar>
             <VideoBanner></VideoBanner>
+           {/* <Quiz></Quiz> */}
             <WeatherAndDiseaseDetection></WeatherAndDiseaseDetection>
             {/* <SearchMap></SearchMap> */}
+             <MyMapComponent></MyMapComponent>
             <AgriChat></AgriChat>
            
-            <Map></Map>
-
+            {/* <Map></Map> */}
+            
             <AllChart></AllChart>
             <InteractiveMap></InteractiveMap>
             <AboutOurApp></AboutOurApp>
