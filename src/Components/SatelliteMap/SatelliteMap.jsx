@@ -15,7 +15,7 @@ const center = {
 
 const MyMapComponent = () => {
   return (
-    <LoadScript googleMapsApiKey="AIzaSyByv820h0bqr64vjnV_mqaeaTY9xCAEkv0">
+    <LoadScript googleMapsApiKey="AIzaSyA5EYoRqHbtSAnX5MtQTSYWwwqN9NX6MhI">
           <div className="px-24 py-10">
               <h1 className="text-2xl font-semibold text-cente text-green-700 mb-6">Space View</h1>
         <GoogleMap
