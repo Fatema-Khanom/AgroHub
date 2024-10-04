@@ -322,7 +322,7 @@ export function StickyNavbar() {
       >
         <Link to={"/quiz"}  className="relative group">
         <span className="text-black group-hover:font-bol transition duration-300 ease-in-out">
-          Quiz
+          AgroQuiz
         </span>
         <span className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"></span>
       </Link>

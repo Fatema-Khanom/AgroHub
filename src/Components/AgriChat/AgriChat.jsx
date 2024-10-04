@@ -70,7 +70,7 @@ const AgriChat = () => {
                 alt="No messages"
                 className="mx-auto mt-5 h-36" // Center the image and add margin
                           />
-                          <h2 className="text-2xl font-bold">Hello! I'm AgriBot</h2>
+                          <h2 className="text-2xl font-bold">Hello! I'm AgroBot</h2>
               <p className="mt-3 text-gray font-seibold text-green-600 px-4  lg:px-20">
                 This is an Agriculture Chatbot designed to assist farmers with valuable information and insights to enhance their farming practices.
                 Feel free to ask questions related to agriculture!
@@ -83,7 +83,7 @@ const AgriChat = () => {
     className={`mb-2 p-2 rounded-lg max-w-xs ${msg.role === "user" ? "text-left text-white bg-blue-800 self-end ml-auto" : "text-left bg-green-800 text-white self-start mr-auto"}`}
   >
     <span className={`font-bold ${msg.role === "user" ? "text-white" : "text-white"}`}>
-      {msg.role === "user" ? "You" : "AgriBot"}:
+      {msg.role === "user" ? "You" : "AgroBot"}:
     </span>
     <span className="ml-2">{msg.content}</span>
   </div>
